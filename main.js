@@ -106,7 +106,7 @@ if (mek.key && mek.key.remoteJid === 'status@broadcast') return
 if (!Zcon.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
 if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
 m = smsg(Zcon, mek, store)
-require("./index.js")(Zcon, m, chatUpdate, store)
+require("./care.js")(Zcon, m, chatUpdate, store)
 } catch (err) {
 console.log(err)
 }
